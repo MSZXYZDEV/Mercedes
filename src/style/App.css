@@ -1,0 +1,38 @@
+body {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  color: #ffffff;
+  background-color: #000000;
+}
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav,
+li,
+ul,
+a {
+  display: inline-block;
+  margin-right: 10px;
+  list-style-type: none;
+  text-decoration: none;
+  color: #fff;
+}
+.logo {
+  margin-right: auto;
+}
+.logo__name {
+  margin-right: 1300px;
+}
+.nav__Search {
+  padding: 10px;
+}
+li:nth-child(3) {
+  cursor: pointer;
+}
+main {
+  display: flex;
+  background-color: #363636;
+}
