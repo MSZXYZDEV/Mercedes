@@ -1,23 +1,37 @@
 import React from "react";
+import '../style/home.css'
 import car from "../assets/imgs/Image3.png";
 import car2 from "../assets/imgs/Image 12.png";
 import car3 from "../assets/imgs/Image 13.png";
 import car4 from "../assets/imgs/Image 31.png";
+// import Assortment from '../pages/Assortment'
+import {
+  BrowserRouter as Router,
+  NavLink,
+  Route,
+  Switch,
+} from "react-router-dom";
 const Home = () => {
   return (
-    <div>
-      <img src={car} alt="Mercedes-Benz AMG GT" className="main__car1" />
-      <a href="">Zobacz Więcej</a>
+    <div className="Home">
+      <div className="car1__image">
+      <img src={car} alt="Mercedes-Benz AMG GT" />
+      </div>
+      <div className="main__car1">
+      <NavLink to="/Assortment" className="car1__text">Zobacz Więcej</NavLink>
+      </div>
       <main>
         <img src={car2} alt="" className="main__car2 main__cars" />
-        <a href="">Zobacz Więcej</a>
         <img src={car3} alt="" className="main__car3 main__cars" />
-        <a href="">Zobacz Więcej</a>
       </main>
+      <NavLink to="/Assortment" className="main__car--text">Zobacz Więcej</NavLink>
+      <NavLink to="/Assortment" className="main__car--text1">Zobacz Więcej</NavLink>
       <footer>
         <img src={car4} alt="" />
-        <a href="">Zobacz więcej</a>
       </footer>
+      <Switch>
+        {/* <Route path='/' component={Assortment}/> */}
+      </Switch>
     </div>
   );
 };

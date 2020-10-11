@@ -1,0 +1,39 @@
+body {
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0;
+}
+.car1__image {
+  display: flex;
+  flex-basis: 400px;
+}
+.main__car1 {
+}
+.car1__text {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: -100px;
+}
+
+main {
+  margin-top: 70px;
+  /* margin-left: 10px; */
+}
+.main__cars {
+  width: 840x;
+  height: 525px;
+  margin-left: 50px;
+}
+.main__car--text {
+  position: absolute;
+  margin-left: 480px;
+  margin-top: -50px;
+}
+.main__car--text1 {
+  position: absolute;
+  margin-left: 1400px;
+  margin-top: -50px;
+}
